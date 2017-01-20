@@ -6,7 +6,7 @@ package com.company;
 public class Tank extends Mashine {
     private int gun;  //  огневая мощь
     private int bron; //  бронь
-    private int power; //  соотношение огневой мощи и брони
+    private int power; //  соотношение веса танка к сумме огневой мощи и брони
 
     public Tank(String color, int weight, int speed, int gun, int bron) {
         super(color, weight, speed);
