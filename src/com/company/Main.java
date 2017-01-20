@@ -3,18 +3,10 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        Tank t34 = new Tank("green", 34000, 34, 20);
+        Tank t34 = new Tank("green", 34000, 34, 200, 200);
+        Tank t35 = new Tank("green", 34000, 34, 200, 200);
         Plane cy = new Plane("white", 3000, 300, 2000);
 
-        System.out.println(cy.printSmth());
-        Mashine q = cy;
-        System.out.println(q.printSmth());
-
-        Mashine m = t34;
-
-
-
-        System.out.println(m instanceof Tank ?"true":"false");
-        System.out.println(cy instanceof Plane);
+        System.out.println(t34.equals(t35)?"Equals power":"Not equals power");
     }
 }
